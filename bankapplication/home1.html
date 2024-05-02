@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Application Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- Bootstrap for easier styling -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- Required for Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Required for Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* Basic custom styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #004085; /* Custom color */
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s; /* Smooth transition */
+        }
+        .navbar a:hover {
+            color: #f8f9fa; /* Lighter shade on hover */
+        }
+        .dropdown-menu {
+            background-color: #f2f2f2; /* Light gray background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+        }
+        .dropdown-menu a {
+            color: #333; /* Dark gray text */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+        }
+        .dropdown-menu a:hover {
+            background-color: #e9e9e9; /* Slightly darker on hover */
+        }
+        .footer {
+            background-color: #004085;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: 40px;
+        }
+        .footer .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 8px;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #e9e9e9;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar with dropdown menus -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Bank Application</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown">
+                        <i class="icon fas fa-wallet"></i> login
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="exp1.html">login</a>
+                        <a class="dropdown-item" href="exp1.html">sign up</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown">
+                        <i class="icon fas fa-exchange-alt"></i> Set pin
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="exp2.html">pin</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown7" role="button" data-toggle="dropdown">
+                        <i class="icon fas fa-list-ul"></i> Account Types
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="exp5/idex.html">Types</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown">
+                        <i class="icon fas fa-chart-line"></i> balance
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="exp3.html">update balance</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown">
+                        <i class="icon fas fa-handshake"></i> view
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="exp4/exp4.html">user details</a>        
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown">
+                        <i class="icon fas fa-chart-line"></i> Transactions
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="exp8/index.html">Transactions</a>        
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown">
+                        <i class="icon fas fa-headset"></i> Customer Service
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown">
+                        <i class="icon fas fa-cog"></i> Settings
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Account Settings</a>
+                    </div>
+                </li>
+               
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown">
+                            <i class="icon fas fa-info-circle"></i> About Us
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="exp9/aboutus.html">Our Team</a>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section for a modern touch -->
+    <div class="hero-section">
+        <h1>Welcome to Your Bank</h1>
+        <p>Your trusted partner for all banking needs. Manage accounts, transactions, loans, investments, and more.</p>
+        <a class="btn btn-primary btn-lg" href="#">Get Started</a> <!-- Call-to-action -->
+    </div>
+
+    <!-- Main content area -->
+    <div class="container">
+        <h2>Featured Services</h2>
+        <ul>
+            <li><a href="#">Account Summary</a></li>
+            <li><a href="#">Quick Transfer</a></li>
+            <li><a href="#">Recent Transactions</a></li>
+        </ul>
+        <hr>
+        <h2>Current Promotions</h2>
+        <p>Explore our latest promotions and special offers!</p>
+        <hr>
+        <h2>Customer Testimonials</h2>
+        <p>"Your Bank has always been reliable and efficient. I highly recommend them!" - Customer A</p>
+        <p>"The customer service is exceptional and the online banking platform is user-friendly." - Customer B</p>
+        <hr>
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><a href="#">How do I open an account?</a></li>
+            <li><a href="#">What are the available loan types?</a></li>
+            <li><a href="#">How do I contact customer service?</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer with more design elements -->
+    <div class="footer">
+        <p>Contact us: 9998888777 | support@yourbank.com</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+</html>
